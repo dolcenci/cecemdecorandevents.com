@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    
+    <h1>Register</h1>
+    <form id="registerForm">
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+    
+    <!-- Import Firebase SDKs -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD7jn56HDd6nME3dommemdPJHFaKHpjuhY",
+            authDomain: "prosper-a9810.firebaseapp.com",
+            projectId: "prosper-a9810",
+            storageBucket: "prosper-a9810.appspot.com",
+            messagingSenderId: "1040350127188",
+            appId: "1:1040350127188:web:da8987386085d778eaf9c1",
+            measurementId: "G-6G8BMD6S3G"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Successful login
+                    window.location.href = 'https://cecemdecorandevents.000webhostapp.com/index.html'; // Replace with your redirect URL
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        });
+
+        // Handle registration form submission
+        document.getElementById('registerForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    alert('User registered successfully!');
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        });
+    </script>
+</body>
+</html>

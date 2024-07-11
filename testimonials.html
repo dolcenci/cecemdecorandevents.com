@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="sticky-header">
+            <a href="index.html">
+                <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+            </a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="menu--mobile">
+                  <li class="menu--mobile__selection"><a href="index.html">Home</a></li>
+                  <li class="menu--mobile__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="menu--mobile__selection--services">
+                    <ul>
+                        <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="social-events.html">Social Events</a></li>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu--mobile__selection"><a href="about.html">About</a></li>
+                  <li class="menu--mobile__selection"><a href="gallery.html">Gallery</a></li>
+                  <li class="menu--mobile__selection"><a class="selected-menu-item" href="testimonials.html">Testimonials</a></li>
+                  <li id="menu--mobile__selection--contact" class="menu--mobile__selection"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div id="banner--non-homepage" class="banner">
+            <div class="menu--desktop">
+                <div class="menu--desktop__left">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <div class="dropdown">
+                        <button class="dropdown--hover">Services</button>
+                        <div class="dropdown__menu">
+                            <a class="selected-menu-item" href="event cars.html">event vehicles</a>
+                            <a href="invitationcard.html">invitation card design</a>
+                            <a href="photos.html">Photos and videos
+
+                            </a>
+                            
+                            <a href="venue-selection.html">venue selection</a>
+                            <a href="event-planning.html">event planning</a>
+                            <a href="decorations.html">decorations</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
+                <div class="menu--desktop__right">
+                    <a href="gallery.html">Gallery</a>
+                    <a  class="selected-menu-item" href="testimonials.html">Testimonials</a>
+                    
+                </div>
+            </div>
+            <h1 id="banner__text--non-homepage">Julia Rose Event Planning Co.</h1>
+        </div>
+    </header>
+    
+
+    <div id="footer">
+        <div id="footer__left">
+           
+        </div>
+        <div id="footer__right">
+            <ul>
+                <li>Julia Rose Event Planning</li>
+                <li>Saratoga Springs, New York</li>
+                <li>Phone: (518) 506-7796</li>
+                <li>Email: JuliaRoseEvents@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="copyright">Peregrim Web Design</div>
+</body>
+</html>

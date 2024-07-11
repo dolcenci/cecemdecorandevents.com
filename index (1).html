@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f7f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .container h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            font-size: 16px;
+        }
+        .form-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+        .form-toggle {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .form-toggle a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .form-toggle a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="form-button">Login</button>
+        </form>
+        <div class="form-toggle">
+            <p>Don't have an account? <a href="#" id="toggleForm">Register</a></p>
+        </div>
+    </div>
+
+    <!-- Import Firebase SDKs and JavaScript -->
+    <script type="module">
+        // Import Firebase SDKs and functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD7jn56HDd6nME3dommemdPJHFaKHpjuhY",
+            authDomain: "prosper-a9810.Firebaseapp.com",
+            projectId: "prosper-a9810",
+            storageBucket: "prosper-a9810.appspot.com",
+            messagingSenderId: "1040350127188",
+            appId: "1:1040350127188:web:da8987386085d778eaf9cl1",
+            measurementId: "G-6G8BMD6S3G"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        // Toggle between login and register forms
+        document.getElementById('toggleForm').addEventListener('click', (e) => {
+            e.preventDefault();
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            const formTitle = document.getElementById('formTitle');
+            const toggleText = document.getElementById('toggleText');
+
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                formTitle.textContent = 'Login';
+                toggleText.innerHTML = 'Don\'t have an account? <a href="#" id="toggleForm">Register</a>';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+                formTitle.textContent = 'Register';
+                toggleText.innerHTML = 'Already have an account? <a href="#" id="toggleForm">Login</a>';
+            }
+        });
+
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Successful login
+                    window.location.href = 'https://cecemdecorandevents.000webhostapp.com/index3.html'; // Replace with your redirect URL
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cece M. Decor and Events</title>
+    <script src="script.js" defer></script>
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="saratoga springs wedding planner, saratoga springs event planner, saratoga springs corporate event planner, event planning services, wedding planners near me, event planners near me, event management companies">
+    <meta name="author" content="Peregrim Web Design">
+    <meta property="og:title" content="Saratoga Springs Wedding and Event Planner | Julia Rose">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="NEED TO GET IMAGE">
+    <meta property="og:url" content="NEED TO GET URL">
+    <meta property="og:description" content="Julia Rose Event Planning Co is a full service wedding and event planning company in Saratoga Springs, NY. Click the contact button to send me a message">
+    <meta property="og:site_name" content="Julia Rose Event Planning Co.">
+    <meta name="twitter:card" content="NEED TO GET IMAGE">
+    <meta name="twitter:image:alt" content="Alt text for image">
+    <meta name="twitter:site" content="@website-username">
+    <meta property="fb:app_id" content="your_app_id">
+</head>
+<body>
+
+    <header>
+
+        <div id="sticky-header">
+            <a href="index.html">
+                <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+            </a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+                <ul id="mobile-menu">
+                  <li class="mobile-menu__selection"><a class="selected-menu-item" href="index.html">Home</a></li>
+                  <li class="mobile-menu__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="mobile-menu__selection--services">
+                    <ul>
+                        <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="social-events.html">Social Events</a></li>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        
+                    </ul>
+                  </li>
+                  <li class="mobile-menu__selection"><a href="about.html">About</a></li>
+                  <li id="mobile-menu__selection--contact" class="mobile-menu__selection"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="banner">
+            <div id="desktop-menu">
+                <div id="desktop-menu__left">
+                    <a class="selected-menu-item" href="index.html">Home</a>
+                    <div id="dropdown">
+                        <button id="dropdown--hover">Services</button>
+                        <div id="dropdown__menu">
+                            
+                            <a href="invitationcard.html">invitation card design</a>
+                            <a href="photos.html">Photos and videos
+
+                            </a>
+                            <a href="event cars.html">event vehicles</a>
+                            <a href="venue-selection.html">venue selection</a>
+                            <a href="event-planning.html">event planning</a>
+                            <a href="decorations.html">decorations</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
+                <div id="desktop-menu__right">
+                    <a href="about.html">About</a>
+                    
+                </div>
+            </div>
+            <h1>Cece M. Decor and Events</h1>
+        </div>
+
+    </header>
+
+    <div id="content--home">
+
+        <div class="mobile-text-content" id="mobile-text-content--wedding">
+            <div class="background-color"></div>
+            <h2>Invitation Cards Design</h2>
+            <p>
+                Invitation Cards Are The Very First Impression You Make To Your Potential Guests. 
+                And As They Say Fisrt Impressions Count, Invitation Cards Need To Be Eye Catching, Colourful And . 
+                Our Team Of Designers Will Make Sure That All These Are Adressed . No One 
+                Wants To Attend An Event That Looks Droopy. Thats Why We Take Card Design Seriously.</p>
+            <button onclick="document.location='weddings.html'">Invitations card page</button>
+        </div>
+        <div class="wrapper" id="wrapper--wedding">
+            <div id="wedding-content">
+                <div id="desktop-text-content--wedding">
+                    <h2>Invitation Cards Design.</h2>
+                    <p> Invitation Cards Are The Very First Impression You Make To Your Potential Guests. And As They Say Fisrt Impressions Count, Invitation Cards Need To Be Eye Catching, Colourful And . Our Team Of Designers Will Make Sure That All These Are Adressed . No One Wants To Attend An Event That Looks Droopy. Thats Why We Take Card Design Seriously.
+                    </p>
+                    <button onclick="document.location='invitationcard.html'">Invitations card design page</button>
+                </div>
+                <div class="image" id="wedding-content__bottom-left-photo">
+                    <img src="images/Events Card Design/images.jpg" alt="a pair of wedding rings sitting on a bouquet of flowers">
+                </div>
+                <div class="image" id="wedding-content__top-right-photo">
+                    <img src="images/Events Card Design/download (2).jpg" alt="a newly wed couple kissing under a tunnel of sparklers being held up by family and friends">
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-text-content">
+            <div class="background-color"></div>
+            <h2>Photos And Videos</h2>
+            <p>Weve Got Quality Cameramen On Standby To Take Pictures And Videos So
+                 You Can Watch All Your Memorable Moments In Quality And Style. Our Men Have Been 
+                 Trained To Not Only Take A Picture, But Rather The Thousand Words In Them. They Have Also 
+                 Been Trained To Not Only Take Videos But Rather Make Motion Pictures, 
+                In Other Words Make A Movie Out Of Every Moment Of Your Event.</p>
+            <button onclick="document.location='photos.html'">Photos and Videos Page</button>
+        </div>
+        <div class="wrapper" id="wrapper--social-events">
+            <div id="social-event-photos">
+                <div class="image" id="social-events-photo-top-left">
+                    <img src="images/eventshome1.jpg" alt="a formal dining arrangement set up on a beach">
+                </div>
+                <div class="image" id="social-events-photo-top-right">
+                    <img src="images/eventshome2.jpg" alt="a pink themed sweet sixteen birthday party">
+                </div>
+                <div class="image" id="social-events-photo-bottom-left">
+                    <img src="images/eventshome3.jpg" alt="a blue and pink themed birthday arrangement">
+                </div>
+                <div class="image" id="social-events-photo-bottom-right">
+                    <img src="images/eventshome4.jpg" alt="a group of people cheering with an assortment of cocktails">
+                </div>
+            </div>
+            <div id="desktop-text-content--social-events">
+                <h2>Photos And Videos</h2>
+                <p>Weve Got Quality Cameramen On Standby To Take Pictures And Videos So
+                    You Can Watch All Your Memorable Moments In Quality And Style. Our Men Have Been 
+                    Trained To Not Only Take A Picture, But Rather The Thousand Words In Them. They Have Also 
+                    Been Trained To Not Only Take Videos But Rather Make Motion Pictures, 
+                   In Other Words Make A Movie Out Of Every Moment Of Your Event.</p>
+                <ul>
+                    <li>Private Parties</li>
+                    <li>Birthdays</li>
+                    <li>Bridal Showers</li>
+                    <li>Anniversaries</li>
+                    <li>Bachelorette Parties</li>
+                    <li>and many more!</li>
+                </ul>
+                <button onclick="document.location='photos.html'">Photos and videos Page</button>
+            </div>
+        </div>
+        
+        <div class="mobile-text-content">
+            <div class="background-color"></div>
+            <h2 >Event Vehicles</h2>
+            <p>Enjoying An Event Is Not About How You And Your Guests Look, But Also About What You Arrive In.
+                 A Luxurious Car Can Turn Heads Before You Even Get Out Of The Car To Reveal Your Stunning Dress/Tuxedo. 
+                We Provide High Class Cars For Your Guests To Travel To And From Your Event Location.</p>
+            <button onclick="document.location='event cars.html'">Event Vehicles Page</button>
+        </div>
+        <div class="wrapper" id="wrapper--corporate">
+            <div id="desktop-text-content--corporate">
+                <h2>Event Vehicles.</h2>
+                <p>Enjoying An Event Is Not About How You And Your Guests Look, But Also About What You Arrive In.
+                    A Luxurious Car Can Turn Heads Before You Even Get Out Of The Car To Reveal Your Stunning Dress/Tuxedo. 
+                   We Provide High Class Cars For Your Guests To Travel To And From Your Event Location.</p>
+                <button onclick="document.location='event cars.html'">Event Vehicles Page</button>
+            </div>
+            <div id="corporate-photos">
+                <div class="image" class="corporate-photo" id="corporate-photo-left">
+                    <img src="images/Event Cars/mercedes-benz-1470136_640.jpg" alt="a large group of people sitting for a presentation">
+                </div>
+                <div class="image" class="corporate-photo" id="corporate-photo-middle">
+                    <img src="images/Event Cars/steering-wheel-2927406_640.jpg" alt="a group of people mingling during an office party">
+                </div>
+                <div class="image" class="corporate-photo" id="corporate-photo-right">
+                    <img src="images/Event Cars/lexus-is-f-2914268_640.jpg" alt="A dining hall set up with tables and chairs with a bar in the background">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-text-content" id="mobile-text-content--wedding">
+            <div class="background-color"></div>
+            <h2>Venue Selection</h2>
+            <p>
+                Our Expertise In Venue Selection Is Second To None. Our Event Planners Know Everything About Every Venue You Have Ever Been To Or Have Ever Seen. They Will Pick The Location That Can Best Cater For The Event That You Are Hosting.</p>
+            <button onclick="document.location='weddings.html'">Venue Selection</button>
+        </div>
+        <div class="wrapper" id="wrapper--wedding">
+            <div id="wedding-content">
+                <div id="desktop-text-content--wedding">
+                    <h2>Venue Selection</h2>
+                    <p>Our Expertise In Venue Selection Is Second To None. Our Event Planners Know Everything About Every Venue You Have Ever Been To Or Have Ever Seen. They Will Pick The Location That Can Best Cater For The Event That You Are Hosting. </p>
+                    <button onclick="document.location='venue-selection.html'">Venue Selection Page</button>
+                </div>
+                <div class="image" id="wedding-content__bottom-left-photo">
+                    <img src="images/venueselectionhome.jpg" alt="a pair of wedding rings sitting on a bouquet of flowers">
+                </div>
+                <div class="image" id="wedding-content__top-right-photo">
+                    <img src="images/venueselectionhome2.jpg" alt="a newly wed couple kissing under a tunnel of sparklers being held up by family and friends">
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-text-content">
+            <div class="background-color"></div>
+            <h2>Event Planning</h2>
+            <p>So Youve Got An Event Coming Up But You Dont Know Where To Start In Terms Of Decorations And The Setup Of The Day. Dont Worry, Give Cece M Decor And Events A Call And They Will Make Sure That Your Event Is Nothing Like The Droopy, Uninspired And Dull Events That You See Nowadays.</p>
+            <button onclick="document.location='social-events.html'">Social Events Page</button>
+        </div>
+        <div class="wrapper" id="wrapper--social-events">
+            <div id="social-event-photos">
+                <div class="image" id="social-events-photo-top-left">
+                    <img src="images/eventshome1.jpg" alt="a formal dining arrangement set up on a beach">
+                </div>
+                <div class="image" id="social-events-photo-top-right">
+                    <img src="images/eventshome2.jpg" alt="a pink themed sweet sixteen birthday party">
+                </div>
+                <div class="image" id="social-events-photo-bottom-left">
+                    <img src="images/eventshome3.jpg" alt="a blue and pink themed birthday arrangement">
+                </div>
+                <div class="image" id="social-events-photo-bottom-right">
+                    <img src="images/eventshome4.jpg" alt="a group of people cheering with an assortment of cocktails">
+                </div>
+            </div>
+            <div id="desktop-text-content--social-events">
+                <h2>Event Planning</h2>
+                <p>So Youve Got An Event Coming Up But You Dont Know Where To Start In Terms Of Decorations And The Setup Of The Day. Dont Worry, Give Cece M Decor And Events A Call And They Will Make Sure That Your Event Is Nothing Like The Droopy, Uninspired And Dull Events That You See Nowadays. One</p>
+                <ul>
+                    <li>Private Parties</li>
+                    <li>Birthdays</li>
+                    <li>Bridal Showers</li>
+                    <li>Anniversaries</li>
+                    <li>Bachelorette Parties</li>
+                    <li>and many more!</li>
+                </ul>
+                <button onclick="document.location='event-planning.html'">Event Planning Page</button>
+            </div>
+        </div>
+        
+        <div class="mobile-text-content">
+            <div class="background-color"></div>
+            <h2 >Decorations</h2>
+            <p>The Layout And Decor Of An Event Is Crucial To The Events Overall Success As It Is A Major Part Of How Comfortable They Are And Therefore How They Are Feeling. She Will Make Sure That Your Guests Are Enjoying Every Single Moment Of The Day.</p>
+            <button onclick="document.location='decorations.html'">Decorations</button>
+        </div>
+        <div class="wrapper" id="wrapper--corporate">
+            <div id="desktop-text-content--corporate">
+                <h2>Decorations</h2>
+                <p>The Layout And Decor Of An Event Is Crucial To The Events Overall Success As It Is A Major Part Of How Comfortable They Are And Therefore How They Are Feeling. She Will Make Sure That Your Guests Are Enjoying Every Single Moment Of The Day.</p>
+                <button onclick="document.location='decorations.html'">Decorations Page</button>
+            </div>
+            <div id="corporate-photos">
+                <div class="image" class="corporate-photo" id="corporate-photo-left">
+                    <img src="images/decorhome1.jpg" alt="a large group of people sitting for a presentation">
+                </div>
+                <div class="image" class="corporate-photo" id="corporate-photo-middle">
+                    <img src="images/decorhome2.jpg" alt="a group of people mingling during an office party">
+                </div>
+                <div class="image" class="corporate-photo" id="corporate-photo-right">
+                    <img src="images/decorhome3.jpg" alt="A dining hall set up with tables and chairs with a bar in the background">
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-text-content">
+            <div class="background-color"></div>
+            <h2>Views from space</h2>
+            <p>We know you are craving to get a visual of what our events look like. below are videos of some of our best events</p>
+            
+        </div>
+        <div class="wrapper" id="wrapper--social-events">
+            
+            <div id="desktop-text-content--social-events">
+                <h2>views from space</h2>
+                <p>We know you are craving to get a visual of what our events look like. below are videos of some of our best events</p>
+               
+               
+            </div>
+        </div>
+        
+        <section>
+            
+            <div>
+                <iframe width="1360" height="720" src="https://www.youtube.com/embed/Ek8nI9u0LvY" title="VID 20240129 WA0016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+             <div>
+                <iframe width="1360" height="720" src="https://youtube.com/shorts/00FgUIb4aPI?feature=share" title="VID 20240129 WA0016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+             <div>
+                <iframe width="1360" height="720" src="https://youtube.com/shorts/wD3IvHuxXAc?feature=share" title="VID 20240129 WA0016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="315" height="560"
+src="https://studio.youtube.com/video/00FgUIb4aPI/edit"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+
+
+            </div>
+            
+        </section>
+
+        <div id="instagram-section">
+            
+            <div id="instagram-section__photos">
+                <div class="image" id="photo-1--mobile">
+                    <img src="images/decorhome1.jpg" alt="a closeup on a bride holding a bouquet of pink and white flowers">
+                </div>
+                <div class="image" id="photo-2--mobile">
+                    <img src="images/home-instagram-2.jpg" alt="A bride and a groom smiling and holding eachother during sunset">
+                </div>
+                <div class="image" id="photo-3--mobile">
+                    <img src="images/decorhome2.jpg" alt="An arrangement of desserts set up on a table decorated with floral arrangements">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/decorhome3.jpg" alt="a closeup on a bride holding a bouquet of pink and white flowers">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/eventshome1.jpg" alt="A bride and a groom smiling and holding eachother during sunset">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/eventshome2.jpg" alt="An arrangement of desserts set up on a table decorated with floral arrangements">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/eventshome3.jpg" alt="a barnyard themed kids birthday party">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/eventshome4.jpg" alt="a photo from down the aisle of a bride and groom during the wedding ceremony outside during the autumn season">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/venueselectionhome.jpg" alt="a rustic bouquet of flowers">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/venueselectionhome2.jpg"alt="two brides kissing during a wedding ceremony">
+                </div>
+                <div class="photo-reel" >
+                    <img src="images/home-instagram-8.jpg" alt="a group of men enjoying cocktails at a party">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div id="footer__left">
+            <p>For more information, send me a message!</p>
+            
+        </div>
+        <div id="footer__right">
+            <ul>
+                <li>Cece M. Decor and Events</li>
+                <li>919 Reagane street, Simunye, Gauteng, SA</li>
+                <li>Phone: (+27) 761911550</li>
+                <li>Email: cecilia.modisane@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div id="copyright">Cece M. Decor And Events.</div>
+
+
+</body>
+</html>
